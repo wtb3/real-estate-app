@@ -1,0 +1,45 @@
+<%= form_with(model: @home, local: true) do |form| %>
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_built %>
+    <%= form.number_field :year_built %>
+  </div>
+
+  <div class="field">
+    <%= form.label :square_feet %>
+    <%= form.number_field :square_feet %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bedrooms %>
+    <%= form.number_field :bedrooms %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bathrooms %>
+    <%= form.number_field :bathrooms %>
+  </div>
+
+  <div class="field">
+    <%= form.label :availability %>
+    <%= form.check_box :availability %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.number_field :price %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
